@@ -41,7 +41,7 @@ const shuffle = array => {
 
 const createCategory = async (data, rewrite = false) => {
   if (!(typeof data.title === 'string')) {
-    throw new ApiError(400, { message: 'title обязательное свойство' });
+    throw new ApiError(400, { message: 'Укажите название категории' });
   }
 
   if (!Array.isArray(data.pairs)) {
